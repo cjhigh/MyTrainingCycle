@@ -1,5 +1,5 @@
 <?php
-include '../vendor/autoload.php';
+include 'vendor/autoload.php';
 use Strava\API\OAuth;
 use Strava\API\Exception;
 
@@ -7,7 +7,7 @@ try {
     $options = array(
         'clientId'     => 14614,
         'clientSecret' => 'APP-TOKEN',
-        'redirectUri'  => 'http://localhost/callback.php'
+        'redirectUri'  => 'http://cjhigh.com/trainingcycle.php'
     );
     $oauth = new OAuth($options);
 
